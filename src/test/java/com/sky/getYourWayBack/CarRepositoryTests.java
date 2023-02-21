@@ -1,10 +1,10 @@
-package com.qa.cardatabase;
+package com.sky.getYourWayBack;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.qa.cardatabase.data.entity.Car;
-import com.qa.cardatabase.data.repository.CarRepository;
-import com.qa.cardatabase.data.entity.Owner;
+import com.sky.getYourWayBack.data.entity.Car;
+import com.sky.getYourWayBack.data.repository.CarRepository;
+import com.sky.getYourWayBack.data.entity.Owner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

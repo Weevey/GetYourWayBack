@@ -1,6 +1,6 @@
-package com.qa.cardatabase.service;
+package com.sky.getYourWayBack.service;
 
-import com.qa.cardatabase.data.entity.Weather;
+import com.sky.getYourWayBack.data.entity.Weather;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 

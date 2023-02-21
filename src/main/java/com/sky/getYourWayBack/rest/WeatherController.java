@@ -1,9 +1,9 @@
-package com.qa.cardatabase.rest;
+package com.sky.getYourWayBack.rest;
 
 
-import com.qa.cardatabase.data.entity.Weather;
+import com.sky.getYourWayBack.data.entity.Weather;
 import org.springframework.web.bind.annotation.*;
-import com.qa.cardatabase.service.WeatherService;
+import com.sky.getYourWayBack.service.WeatherService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

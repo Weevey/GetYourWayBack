@@ -1,4 +1,4 @@
-package com.qa.cardatabase;
+package com.sky.getYourWayBack;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Bean;
 //import com.qa.cardatabase.data.repository.CarRepository;
 //import com.qa.cardatabase.data.entity.Owner;
 //import com.qa.cardatabase.data.repository.OwnerRepository;
-import com.qa.cardatabase.data.entity.User;
-import com.qa.cardatabase.data.repository.UserRepository;
+import com.sky.getYourWayBack.data.entity.User;
+import com.sky.getYourWayBack.data.repository.UserRepository;
 
 @SpringBootApplication
 public class CardatabaseApplication {

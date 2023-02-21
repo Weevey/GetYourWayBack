@@ -1,4 +1,4 @@
-package com.qa.cardatabase.data.entity;
+package com.sky.getYourWayBack.data.entity;
 
 public class Weather {
 

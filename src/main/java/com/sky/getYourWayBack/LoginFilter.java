@@ -1,4 +1,4 @@
-package com.qa.cardatabase;
+package com.sky.getYourWayBack;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -16,8 +16,8 @@ import org.springframework.security.web.authentication.AbstractAuthenticationPro
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.qa.cardatabase.domain.AccountCredentials;
-import com.qa.cardatabase.service.AuthenticationService;
+import com.sky.getYourWayBack.domain.AccountCredentials;
+import com.sky.getYourWayBack.service.AuthenticationService;
 
 // this filter handles POST requests to the /login endpoint
 public class LoginFilter extends AbstractAuthenticationProcessingFilter{

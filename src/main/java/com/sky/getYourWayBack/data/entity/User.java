@@ -1,4 +1,4 @@
-package com.qa.cardatabase.data.entity;
+package com.sky.getYourWayBack.data.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

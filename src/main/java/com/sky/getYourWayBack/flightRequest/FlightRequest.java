@@ -1,4 +1,4 @@
-package com.qa.cardatabase.flightRequest;
+package com.sky.getYourWayBack.flightRequest;
 
 import com.amadeus.Amadeus;
 import com.amadeus.Params;
