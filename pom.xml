@@ -80,6 +80,20 @@
 			<artifactId>json</artifactId>
 			<version>20210307</version>
 		</dependency>
+		<dependency>
+			<groupId>com.amadeus</groupId>
+			<artifactId>amadeus-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20201115</version>
+		</dependency>
 
 
 		<dependency>
