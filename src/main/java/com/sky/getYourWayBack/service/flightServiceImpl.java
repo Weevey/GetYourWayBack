@@ -30,7 +30,7 @@ public class flightServiceImpl implements FlightService{
 
         String durationOutput = (dataArray.get(0).getAsJsonObject().getAsJsonArray("itineraries")
                 .get(0).getAsJsonObject().get("duration").getAsString());
-        String priceOutput = (dataArray.get(0).getAsJsonObject().getAsJsonObject("price").get("total").getAsString() + " }");
+        String priceOutput = (dataArray.get(0).getAsJsonObject().getAsJsonObject("price").get("total").getAsString());
         JSONObject dataReturn = new JSONObject();
         dataReturn.put("duration", durationOutput);
         dataReturn.put("price", priceOutput);
