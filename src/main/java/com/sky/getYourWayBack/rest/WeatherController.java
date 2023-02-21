@@ -1,6 +1,4 @@
 package com.sky.getYourWayBack.rest;
-
-
 import com.sky.getYourWayBack.data.entity.Weather;
 import org.springframework.web.bind.annotation.*;
 import com.sky.getYourWayBack.service.WeatherService;
