@@ -12,7 +12,7 @@ import com.qa.cardatabase.data.repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService{
-	
+
 	@Autowired
 	UserRepository repository;
 

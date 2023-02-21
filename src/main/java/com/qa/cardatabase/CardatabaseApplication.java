@@ -7,11 +7,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
-import com.qa.cardatabase.data.entity.Car;
-import com.qa.cardatabase.data.repository.CarRepository;
-import com.qa.cardatabase.data.entity.Owner;
-import com.qa.cardatabase.data.repository.OwnerRepository;
+//
+//import com.qa.cardatabase.data.entity.Car;
+//import com.qa.cardatabase.data.repository.CarRepository;
+//import com.qa.cardatabase.data.entity.Owner;
+//import com.qa.cardatabase.data.repository.OwnerRepository;
 import com.qa.cardatabase.data.entity.User;
 import com.qa.cardatabase.data.repository.UserRepository;
 
@@ -20,12 +20,12 @@ public class CardatabaseApplication {
 	
 	private static final Logger logger = LoggerFactory.getLogger(CardatabaseApplication.class);
 	
-	@Autowired
-	private CarRepository repository;
-	
-	@Autowired
-	private OwnerRepository owner_repository;
-	
+//	@Autowired
+//	private CarRepository repository;
+//
+//	@Autowired
+//	private OwnerRepository owner_repository;
+//
 	@Autowired
 	private UserRepository user_repository;
 
@@ -41,18 +41,18 @@ public class CardatabaseApplication {
 	return args -> {
 		// Save demo data to database
 		// Add owner objects and save these to the database
-		Owner owner1 = new Owner("Julie" , "Dooley");
-		Owner owner2 = new Owner("Bob" , "Robinson");
-		owner_repository.save(owner1);
-		owner_repository.save(owner2);
-		
-		// Add cars with OWNERs
-		repository.save(new Car("Ford", "Focus", "Red",
-		"AB17 SWD", 2017, 59000,owner1 ));
-		repository.save(new Car("Audi", "TT", "White",
-		"DE14 VCL", 2014, 29000, owner1));
-		repository.save(new Car("BMW", "5 Series", "Silver",
-		"KK18 UYR", 2018, 39000, owner2));
+//		Owner owner1 = new Owner("Julie" , "Dooley");
+//		Owner owner2 = new Owner("Bob" , "Robinson");
+//		owner_repository.save(owner1);
+//		owner_repository.save(owner2);
+//
+//		// Add cars with OWNERs
+//		repository.save(new Car("Ford", "Focus", "Red",
+//		"AB17 SWD", 2017, 59000,owner1 ));
+//		repository.save(new Car("Audi", "TT", "White",
+//		"DE14 VCL", 2014, 29000, owner1));
+//		repository.save(new Car("BMW", "5 Series", "Silver",
+//		"KK18 UYR", 2018, 39000, owner2));
 		
 		user_repository.save(new User("admin",
 				"$2a$10$LmptYa4uWhkO/OO.lpmahO14w0WKBzyKQOAXeSrYal04KKt.OTcRu",
