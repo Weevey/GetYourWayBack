@@ -16,11 +16,6 @@ public class WeatherController {
         this.service = service;
     }
 
-
-//    public GYWController(WeatherService service) {
-//        this.service = service;
-//    }
-
     @GetMapping("/weather/{location}")
     public Weather weatherRequest(@PathVariable String location) {
 
