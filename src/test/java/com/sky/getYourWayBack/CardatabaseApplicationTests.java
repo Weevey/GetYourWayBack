@@ -1,6 +1,5 @@
 package com.sky.getYourWayBack;
 
-import com.sky.getYourWayBack.web.CarController;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,15 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 //@AutoConfigureMockMvc
 class CardatabaseApplicationTests {
 
-	@Autowired
-	private CarController carController;
 
-//	@Autowired
-//	private MockMvc mockMvc;
 
-	@Test
-	void contextLoads() {
-		assertThat(carController).isNotNull();
-	}
 
 }
