@@ -3,9 +3,11 @@ import com.amadeus.Amadeus;
 import com.amadeus.Params;
 import com.amadeus.exceptions.ResponseException;
 import com.amadeus.resources.FlightOfferSearch;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.sky.getYourWayBack.data.entity.Flight;
 import org.springframework.stereotype.Service;
+import org.json.simple.JSONObject;
 
 
 @Service
@@ -23,15 +25,22 @@ public class flightServiceImpl implements FlightService{
         );
 
         JsonObject body = flightOffers[0].getResponse().getResult();
-        System.out.println(body);
 
+        JsonArray dataArray = body.getAsJsonArray("data");
+
+        String durationOutput = (dataArray.get(0).getAsJsonObject().getAsJsonArray("itineraries")
+                .get(0).getAsJsonObject().get("duration").getAsString());
+        String priceOutput = (dataArray.get(0).getAsJsonObject().getAsJsonObject("price").get("total").getAsString() + " }");
+        JSONObject dataReturn = new JSONObject();
+        dataReturn.put("duration", durationOutput);
+        dataReturn.put("price", priceOutput);
 
         if (flightOffers[0].getResponse().getStatusCode() != 200) {
             System.out.println("Wrong status code: " + flightOffers[0].getResponse().getStatusCode());
             System.exit(-1);
         }
 
-        return body.toString();
+        return dataReturn.toString();
     }
 
 }

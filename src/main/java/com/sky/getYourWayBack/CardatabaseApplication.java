@@ -39,21 +39,7 @@ public class CardatabaseApplication {
 	@Bean
 	CommandLineRunner runner(){
 	return args -> {
-		// Save demo data to database
-		// Add owner objects and save these to the database
-//		Owner owner1 = new Owner("Julie" , "Dooley");
-//		Owner owner2 = new Owner("Bob" , "Robinson");
-//		owner_repository.save(owner1);
-//		owner_repository.save(owner2);
-//
-//		// Add cars with OWNERs
-//		repository.save(new Car("Ford", "Focus", "Red",
-//		"AB17 SWD", 2017, 59000,owner1 ));
-//		repository.save(new Car("Audi", "TT", "White",
-//		"DE14 VCL", 2014, 29000, owner1));
-//		repository.save(new Car("BMW", "5 Series", "Silver",
-//		"KK18 UYR", 2018, 39000, owner2));
-		
+
 		user_repository.save(new User("admin",
 				"$2a$10$LmptYa4uWhkO/OO.lpmahO14w0WKBzyKQOAXeSrYal04KKt.OTcRu",
 				"ADMIN"));

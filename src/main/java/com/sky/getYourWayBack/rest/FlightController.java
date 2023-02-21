@@ -11,7 +11,7 @@ public class FlightController {
 
     private FlightService service;
     public FlightController(FlightService service){this.service = service;}
-    @GetMapping("/flight")
+    @PostMapping("/flight")
     public String flightRequest(@RequestBody Flight flight){
 
         Flight toCreate = new Flight(flight.getDeparture(), flight.getDestination(),
