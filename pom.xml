@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.qa</groupId>
-	<artifactId>cardatabase</artifactId>
+	<artifactId>GYWdatabase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cardatabase</name>
 	<description>Demo project for Spring Boot</description>
@@ -137,6 +137,11 @@
 			<version>6.5.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
 
 		<!--		added-->
 		<dependency>
