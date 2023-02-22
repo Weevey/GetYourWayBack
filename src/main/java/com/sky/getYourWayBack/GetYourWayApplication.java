@@ -11,15 +11,15 @@ import com.sky.getYourWayBack.data.entity.User;
 import com.sky.getYourWayBack.data.repository.UserRepository;
 
 @SpringBootApplication
-public class CardatabaseApplication {
+public class GetYourWayApplication {
 	
-	private static final Logger logger = LoggerFactory.getLogger(CardatabaseApplication.class);
+	private static final Logger logger = LoggerFactory.getLogger(GetYourWayApplication.class);
 
 	@Autowired
 	private UserRepository user_repository;
 
 	public static void main(String[] args) {
-		SpringApplication.run(CardatabaseApplication.class, args);
+		SpringApplication.run(GetYourWayApplication.class, args);
 //		auto restart test comment
 		logger.info("Hello Spring Boot");
 		

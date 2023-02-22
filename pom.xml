@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.qa</groupId>
-	<artifactId>cardatabase</artifactId>
+	<artifactId>GYWdatabase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cardatabase</name>
 	<description>Demo project for Spring Boot</description>
