@@ -29,6 +29,7 @@ public class CardatabaseApplication {
 	CommandLineRunner runner(){
 	return args -> {
 		
+
 		user_repository.save(new User("admin",
 				"$2a$10$LmptYa4uWhkO/OO.lpmahO14w0WKBzyKQOAXeSrYal04KKt.OTcRu",
 				"ADMIN"));
