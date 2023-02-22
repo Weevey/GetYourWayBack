@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.context.annotation.Bean;
 import com.sky.getYourWayBack.data.entity.User;
 import com.sky.getYourWayBack.data.repository.UserRepository;
@@ -19,10 +20,14 @@ public class GetYourWayApplication {
 	private UserRepository user_repository;
 
 	public static void main(String[] args) {
-		SpringApplication.run(GetYourWayApplication.class, args);
+//		SpringApplication.run(GetYourWayApplication.class, args);
 //		auto restart test comment
+		SpringApplication application = new SpringApplication(GetYourWayApplication.class);
+		application.addListeners(new ApplicationPidFileWriter());
+		application.run(args);
+
 		logger.info("Hello Spring Boot");
-		
+
 	}
 	
 	@Bean
