@@ -15,12 +15,12 @@ public class WeatherController {
     }
 
     @GetMapping("/weather/{location}")
-    public Weather weatherRequest(@PathVariable String location) {
+    public String weatherRequest(@PathVariable String location) {
 
         return this.service.getWeather(location);
     }
     @GetMapping("/weather")
-    public Weather weatherRequestByCityName(@RequestParam String cityName) {
+    public String weatherRequestByCityName(@RequestParam String cityName) {
         return this.service.getWeather(cityName);
     }
 }
