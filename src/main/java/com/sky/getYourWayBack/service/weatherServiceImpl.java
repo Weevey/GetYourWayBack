@@ -42,24 +42,12 @@ public class weatherServiceImpl implements WeatherService {
                 System.out.println("weather Array: " + weatherArray);
                 Object weatherObject = weatherArray.get(0);
                 System.out.println("weather object: " + weatherObject);
-//                String cloundOrSun = (JSONObject)weatherArray.get(0).getAsJsonObject();
-//
-//                Map<String, String> weather = (Map<String, String>) weatherObject;
-//                String main = weather.get("main");
-//                System.out.println(main);
-
-
-//                System.out.println(sunniness.getString("main"));
-//                JSONObject cloudiness = new JSONObject(weatherObject);
-//                System.out.println("cloudiness: " + cloudiness);
-//                String cloudOutput = cloudiness.getString("main");
-//                System.out.println(clouds);
 
                 org.json.simple.JSONObject dataReturn = new org.json.simple.JSONObject();
                 dataReturn.put("Temperature", temperature);
                 dataReturn.put("Weather", weatherObject);
                 return dataReturn.toString();
-//                return new Weather(temperature);
+
             }
         } catch (Exception e) {
             e.printStackTrace();
