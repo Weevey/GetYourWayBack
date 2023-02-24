@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class flightServiceImpl implements FlightService{
 
     public String getFlightAsString(Flight f) throws Exception {
-        Amadeus amadeus = Amadeus.builder("4DoCEKYpLX4r6rh1QUWPTa4LrfCSvmIk", "Kl1wTf1LricDruPO").build();
+        Amadeus amadeus = Amadeus.builder("gvEAjP9XENz0zG9NyNzGOv6ae3lo7RTD", "kfB6b1WyWlGiEEbc").build();
 
         FlightOfferSearch[] flightOffers = amadeus.shopping.flightOffersSearch.get(
                 Params.with("originLocationCode", f.getDeparture())
